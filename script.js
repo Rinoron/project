@@ -21,5 +21,50 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-'use strict';
+// "use strict";
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
+
+const lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+const filmsScore = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[lastMovie] = filmsScore;
+personalMovieDB.movies[lastMovie] = filmsScore;
+
+
+
+
+console.log(personalMovieDB);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
